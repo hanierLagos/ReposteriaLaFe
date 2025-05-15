@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce Encanto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+     <!-- Encabezado -->
+    <header class="header-nav">
+        <div class="logo-container">
+            <img src="Images/logo.jpeg" alt="Logo de la repostería" />
+        </div>
+        <div class="logo">
+            <h1>Repostería Deliciosa</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            &#9776;
+        </button>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <!-- ====== SECCIÓN DE INFORMACIÓN ====== -->
+    <section class="about-section">
+        <div class="about-container">
+            
+            <!-- Misión y Visión -->
+            <div class="info-container">
+                <div class="mision-container">
+                    <h2>Misión</h2>
+                    <p>Ofrecer productos de repostería artesanal con ingredientes de alta calidad, creando experiencias dulces e inolvidables para cada ocasión especial.</p>
+                </div>
+                
+                <div class="vision-container">
+                    <h2>Visión</h2>
+                    <p>Ser la pastelería preferida por su sabor, creatividad y compromiso con la satisfacción del cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Productos Destacados -->
+    <section class="productos-destacados">
+        <h2>Nuestros Productos Destacados</h2>
+        <div class="productos-container2">
+            <div class="producto2">
+                <img src="Images/pastel1.jpeg" alt="Pastel de Chocolate" class="producto-img">
+                <div class="producto-info">
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Rico pastel húmedo con cobertura de chocolate artesanal.</p>
+                    <span class="etiqueta">Favorito</span>
+                </div>
+            </div>
+            <div class="producto2">
+                <img src="Images/cupcakesFrutaless.jpeg" alt="Cupcakes Variados" class="producto-img">
+                <div class="producto-info">
+                    <h3>Cupcakes Frutales</h3>
+                    <p>Deliciosos cupcakes con diseños personalizados para cada evento.</p>
+                    <span class="etiqueta">Nuevo</span>
+                </div>
+            </div>
+            <div class="producto2">
+                <img src="Images/PieLimon.jpeg" alt="Pie de Frutas" class="producto-img">
+                <div class="producto-info">
+                    <h3>Pie de Limon</h3>
+                    <p>Una mezcla perfecta de frutas frescas y masa crujiente.</p>
+                    <span class="etiqueta">Orgánico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opiniones de Clientes + Formulario -->
+    <section class="opiniones-clientes" id="opiniones">
+        <h2>Opiniones de Clientes</h2>
+        <p>¡Tu opinión es importante para nosotros!</p>
+        <div class="opiniones-container">
+            <div class="opinion">
+                <span>Laura G.</span>
+                <p>★★★★★</p>
+                <p>¡El pastel de cumpleaños fue un éxito total!</p>
+            </div>
+            <div class="opinion">
+                <span>Ricardo M.</span>
+                <p>★★★★☆</p>
+                <p>Muy buenos sabores, volveré sin duda.</p>
+            </div>
+            <div class="opinion">
+                <span>Martha M.</span>
+                <p>★★★☆☆</p>
+                <p>Muy buenos pasteles, volveré sin duda.</p>
+            </div>
+        </div>
+        <form class="form-opinion">
+            <input type="text" placeholder="Tu nombre" required>
+            <textarea placeholder="Escribe tu opinión..." required></textarea>
+            <button type="submit">Enviar Opinión</button>
+        </form>
+    </section>
+    <!-- Novedades -->
+    <section class="novedades">
+        <h2>✨ Tips y Consejos de Repostería</h2>
+        <div class="novedades-container">
+            <div class="novedad">
+                <h3>🎂 Cómo lograr un bizcocho esponjoso</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/zqQcSAXy1VY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="novedad">
+                <h3>🍰 Decoración con fondant</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/jGUwpPq8ElY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Repostería Deliciosa - Todos los derechos reservados</p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/share/1BksgDVMLb/" target="_blank">
+                <img src="Images/faceboook.png" alt="Facebook" width="30" />
+            </a>
+            <a href="https://www.instagram.com/delicias_lafe02?igsh=OHpvNjdqYnBldGVz" target="_blank">
+                <img src="Images/Instagram_icon.png" alt="Instagram" width="30" />
+            </a>
+            <a href="https://wa.me/50587090735" target="_blank">
+                <img src="Images/whatsaApp.png" alt="WhatsApp" width="30" />
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
